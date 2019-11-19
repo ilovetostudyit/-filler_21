@@ -6,11 +6,11 @@
 /*   By: ehaggon <ehaggon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/11 20:24:59 by ehaggon           #+#    #+#             */
-/*   Updated: 2019/01/16 14:07:10 by ehaggon          ###   ########.fr       */
+/*   Updated: 2019/11/19 14:16:26 by ehaggon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "inc/filler.h"
 
 static int			ft_validator(char **mychrarr, char **line)
 {

@@ -1,13 +1,5 @@
 #include "../inc/filler.h"
 
-void ft_init_struct(t_game_info *filler)
-{
-    filler->x = 0;
-    filler->y = 0;
-    filler->line = NULL;
-    printf("%s\n", "we prepare the structure");
-}
-
 void ft_free_struct()
 {
     printf("%s\n", "free the structure");
@@ -26,8 +18,11 @@ void ft_parse_input()
 int main()
 {
     t_game_info filler;
+    int         res;
+
     ft_init_struct(&filler);
-    ft_player_parse(&filler);
+    if ((res = ft_player_parse(&filler)) == 1)
+        return(1);
     /*while (1)
     {
         ft_parse_input();
